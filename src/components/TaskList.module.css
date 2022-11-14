@@ -1,0 +1,134 @@
+.taskListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 736px;
+  height: 451px;
+  left: calc(50% - 736px / 2);
+
+  margin-top: 64px;
+}
+
+.taskListHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px;
+
+  width: 100%;
+  height: 19px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.tasksCreated {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 138px;
+  height: 19px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.tasksCreated > span {
+  width: 106px;
+  height: 17px;
+
+  font-size: 0.875rem;
+}
+
+.tasksCreated > strong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+  padding: 2px 8px;
+
+  font-size: 0.875rem;
+
+  font-weight: normal;
+  font-size: 0.700rem;
+}
+
+.tasksFinished {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 0.5rem;
+
+  width: 138px;
+  height: 19px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.tasksFinished > strong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  gap: 10px;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 999px;
+
+  font-size: 0.700rem;
+
+  width: 52px;
+  height: 19px;
+  font-weight: normal;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 736px;
+  height: 408px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
